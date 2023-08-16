@@ -4,11 +4,11 @@ function Calculadora(){
     this.inicia = () => {
         this.capturaCliques();
         this.capturaEnter();
-    }
+    };
 
     this.capturaEnter = () => {
         document.addEventListener('keyup', (e) => {
-            if(e.keycode === 13) {
+            if(e.keyCode === 13) {
                 this.realizaConta();
             }
         });
