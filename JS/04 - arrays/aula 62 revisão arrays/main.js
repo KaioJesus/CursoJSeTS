@@ -13,6 +13,7 @@ console.log(nomes);
 
 const novo = nomes;
 console.log(novo);
+
 novo.pop(); // mais utilizado que o shift
 
 console.log(nomes, novo); //mesma cosia
