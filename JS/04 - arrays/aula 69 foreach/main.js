@@ -7,8 +7,10 @@ const a1 = [10, 20, 30, 40, 50];
 // formas de iteração
 
 a1.forEach((valor, indice, array) => {
-    console.log(valor, indice, array, array[indice]);
+    console.log(valor, indice, array);
 })
+
+a1.forEach(n => console.log(n));
 let total = 0;
 
 // usando foreach para somar tudo, o que pode ser feito com o reduce

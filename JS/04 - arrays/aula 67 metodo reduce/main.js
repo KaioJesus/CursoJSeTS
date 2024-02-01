@@ -8,12 +8,16 @@ const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
 
 let total = numeros.reduce((acumulador, valor, indice, array) => {
     acumulador += valor;
-    // console.log(acumulador, valor, indice);
+    console.log(acumulador, valor, indice);
     // para cada passagem no array, o acumulador recebe o valor do atual indice mais o valor do acumulador
     return acumulador;
 }, 0);
 
-// console.log(total);
+console.log(total);
+
+// fazendo o que fiz acima em uma linha
+let totalDois = numeros.reduce((acc, value) => acc += value);
+console.log(totalDois);
 
 //retorn os pares (filter)
 const pares = numeros.reduce(function(acumulador, valor) {
@@ -21,7 +25,7 @@ const pares = numeros.reduce(function(acumulador, valor) {
     return acumulador;
 }, [])
 
-// console.log(pares);
+console.log(pares);
 
 //retorna o dobro (map)
 const dobro = numeros.reduce((acumulador, valor)=>{
@@ -29,7 +33,7 @@ const dobro = numeros.reduce((acumulador, valor)=>{
     return acumulador;
 }, [])
 
-// console.log(dobro);
+console.log(dobro);
 
 const pessoas = [
     {nome: 'Kaio', idade: 23},

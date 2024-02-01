@@ -25,6 +25,6 @@ nome.forEach(function(element, index, arr){ //valor, indice e array completo
 
 console.log('');
 
-nome.forEach((element, index, arr) => { //usando array function
+nome.forEach((element, index, arr) => { //usando arrow function
     console.log(element, index, arr);
 })
